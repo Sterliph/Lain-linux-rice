@@ -1,0 +1,21 @@
+anchor=top-right
+font=FiraCode Nerd Font 11
+background-color=#000000
+text-color=#e0b2a5
+width=350
+margin=20,20,0
+padding=4
+border-size=2
+border-color=#e76f8b
+border-radius=10
+default-timeout=4000
+group-by=summary
+icons=1
+max-icon-size=60
+
+[grouped]
+format=<b>%s</b>\n%b
+
+[mode=silence]
+invisible=1
+
