@@ -2,7 +2,7 @@
 * {
     border: none;
     border-radius: 60px;
-    font-family: "FiraCode Nerd Font","Font Awesome 6 Free";
+    font-family: "FiraCode Nerd Font","Font Awesome 6 Free", "cryptofont";
     font-weight: bold;
     font-size: 18px;
     min-height: 0px;
@@ -66,7 +66,7 @@ tooltip label {
     font-weight: bolder;
     box-shadow: inset 0 -3px transparent;
     transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
-    padding: 0 8px;
+    padding: 0 18px 0 8px;
 }
 
 #workspaces button.active {
@@ -74,7 +74,9 @@ tooltip label {
     border-bottom: 2px solid transparent;
     /* border-top: 2px solid transparent; */
     border-image: linear-gradient(70deg, #e0b2a5, #e76f8b) 1;
-    padding: 0 15px;
+    padding: 0 3px 0 2px;
+    margin-left: 4px;
+    margin-right: 9px;
 }
 
 #workspaces button.focused {
@@ -88,8 +90,8 @@ tooltip label {
 #workspaces button.urgent {
     background: #e0b2a5;
     color: black;
-    padding: 0px 12px 0px 7px;
-    margin: 0px 1px 0px 9px;
+    padding: 0px 16px 0px 13px;
+    margin: 0px 3px 0px 9px;
 }
 
 #workspaces button:hover {
@@ -97,8 +99,8 @@ tooltip label {
     background: black;
     border: 1.7px solid #e0b2a5;
     border-radius: 50px;
-    padding: 0 20px 0 10px;
-    margin: 0 2px 0 13px;
+    padding: 0 19px 0 12px;
+    margin: 0 10px 0 10px;
 }
 
 /* Specific Module Styles */
@@ -129,6 +131,7 @@ tooltip label {
 #jack,
 #cpu-load,
 #image,
+#performance,
 #workspaces {
     background-color: rgba(0, 0, 0, 1);
 	border-radius: 300px;
@@ -142,11 +145,23 @@ tooltip label {
 
 #custom-crypto {
 	padding-left: 18px;
+	font-family: cryptofont, FiraCode Nerd Font;
 }
 
 #cpu {
 	padding-left: 12px;
 	padding-right: 14px;
+}
+
+#performance {
+	padding-top: 2px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#backlight {
+	padding-top: 2px;
+	padding-bottom: 0px;
 }
 
 #cpu-load {
@@ -195,6 +210,7 @@ tooltip label {
 
 #custom-updates {
 	color: #e0b2a5;
+	padding: 0px 9px 0px 4px;
 }
 
 #temperature.critical {
