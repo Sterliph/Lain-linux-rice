@@ -277,14 +277,14 @@
 
     // Custom
     "custom/updates": {
-      "format": "{} {icon}",
+      "format": " {}{icon}",
       "return-type": "json",
       "format-icons": {
-        "has-updates": "", //
-        "updated": ""
+        "has-updates": "  ", //
+        "updated": " "
       },
       "exec-if": "which waybar-module-pacman-updates",
-      "exec": "waybar-module-pacman-updates --interval-seconds 1200 --network-interval-seconds 300",
+      "exec": "waybar-module-pacman-updates --interval-seconds 300 --network-interval-seconds 300 --no-zero-output",
       "on-click-right": "foot --title='System Update' garuda-update"
     },
     "battery": {
@@ -322,7 +322,7 @@
     "layer": "top",
     "position": "bottom",
     "height": 34,
-    "mode": "none",
+    "mode": "dock",
     "exclusive": true,
     "fixed-center": true,
     "spacing": 2,
@@ -370,7 +370,7 @@
         "title<.*figma.*>": "",
         "class<firefox>": "",
         "class<librewolf>": "",
-        //"title<.*github.*>": "",
+        "title<.*Картинка в картинке.*>": "",
         "class<github desktop>": "",
         "class<jetbrains-webstorm>": "",
         "class<jetbrains-pycharm-ce>": "",
@@ -416,20 +416,20 @@
       "on-scroll-up": "hyprctl dispatch workspace m+1 > /dev/null",
       "on-scroll-down": "hyprctl dispatch workspace m-1 > /dev/null",
       "format-icons": {
-        // "1": "1",
-        // "2": "2",
-        // "3": "3",
-        // "4": "4",
-        // "5": "5",
-        // "6": "6",
-        // "7": "7",
-        // "8": "8",
-        // "9": "9",
-        // "10": "10",
-        "special": "🎁",
-        "urgent": "",
+        "1": "1 ~",
+        "2": "2 ~",
+        "3": "3 ~",
+        "4": "4 ~",
+        "5": "5 ~",
+        "6": "6 ~",
+        "7": "7 ~",
+        "8": "8 ~",
+        "9": "9 ~",
+        "10": "0 ~",
+        //"special": "🎁",
+        //"urgent": "",
         "persistent": ""
-        // "default": " ",
+        //"default": "",
       }
     },
     "wlr/taskbar": {
@@ -497,7 +497,7 @@
       "escape": true
     },
     "custom/crypto": {
-        "format": "{}",
+        "format": "{}",
         "interval": 600,
         "return-type": "json",
         "exec": "waybar-crypto", // change this if you installed manually
