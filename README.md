@@ -1,5 +1,6 @@
 # Serial Experiments Lain Linux Rice!
 
+## Video:
 [![Watch the video](https://img.youtube.com/vi/Leuyjxx0Pm0/maxresdefault.jpg)](https://youtu.be/Leuyjxx0Pm0)
 
 ## Screenshots:
